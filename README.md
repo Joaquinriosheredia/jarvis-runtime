@@ -1,5 +1,10 @@
 # Jarvis Runtime
 
+**¿Harto de quedarte a mitad de una tarea por límites de tokens?**
+
+Runtime híbrido que usa tu modelo local primero y solo llama a cloud cuando realmente hace falta.
+Sin límites artificiales. Sin vendor lock-in. Sin sorpresas en la factura.
+
 **Local-first hybrid AI runtime.** Runs fast and free on your machine. Falls back to OpenAI only when needed.
 
 ```
