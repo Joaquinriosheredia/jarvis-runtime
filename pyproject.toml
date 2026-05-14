@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvis-runtime"
+version = "0.1.0"
+description = "Local-first hybrid AI runtime with intelligent cloud fallback"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Joaquín Ríos Heredia", email = "j.r.sinbarreras@gmail.com" }]
+keywords = ["ai", "llm", "ollama", "openai", "local-first"]
+
+dependencies = [
+    "openai>=1.30",
+    "requests>=2.34",
+    "python-dotenv>=1.0",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-mock>=3.14",
+]
+
+[project.scripts]
+jarvis = "jarvis.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jarvis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
