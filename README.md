@@ -21,6 +21,8 @@ jarvis ask "explica qué es un decorator en Python"
 Latency:  2.1s   Tokens: ~94   Cost: $0.00000
 ```
 
+> Salida de ejemplo: la latencia, los tokens y el coste son ilustrativos, no una medición. Dependen del modelo, del hardware y del prompt.
+
 ---
 
 ## Instalación
@@ -53,7 +55,7 @@ jarvis usage          # tokens y coste acumulado
 **1. Explicar código sin salir del flujo de trabajo**
 ```bash
 jarvis ask "¿qué hace esta línea en Python: [x for x in lista if x > 0]?"
-# Responde en local en ~2s, sin abrir un navegador
+# Responde en local, sin abrir un navegador
 ```
 
 **2. Decisiones rápidas de arquitectura**
